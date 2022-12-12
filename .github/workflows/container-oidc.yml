@@ -1,6 +1,10 @@
 on: [push]
 name: Linux_Container_Workflow_OIDC
 
+permissions:
+  id-token: write
+  contents: read
+  
 jobs:
     build-and-deploy:
         runs-on: ubuntu-latest
